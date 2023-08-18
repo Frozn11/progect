@@ -42,4 +42,4 @@ async def on_message(message):
         #return
         #await message.channel.send(message.content)
 
-client.run("MTAxODUyNzA1ODE4OTYzNTYyNQ.GyDf5M.aoT4fngK-TCfecc6FKXbtG6NZds7xeNIJP5aOI")
+client.run("ТОКЕН")
