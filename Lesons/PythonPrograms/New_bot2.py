@@ -21,4 +21,4 @@ async def Save(ctx):
     time.sleep(5)
     await ctx.send("и просто не выбрасывать мусор на улицу")
 
-bot.run("MTExNDIyOTE4NDUyNTUwODY1OQ.GAFNTE.lciq8wgaGxY2-vi9kola3i8cqHW0c2LTO1i9KQ")
+bot.run("Tokin")
