@@ -11,6 +11,8 @@ bot = commands.Bot(command_prefix='!', intents=intents)
 async def on_ready():
     print(f'We have logged in as {bot.user}')
 
+
+
 @bot.command()
 async def Save(ctx):
     await ctx.send("как можно спасти мир")
@@ -20,5 +22,9 @@ async def Save(ctx):
     await ctx.send("2.ты ещё можешь поддержать https://teamtrees.org/ или https://teamseas.org/")
     time.sleep(5)
     await ctx.send("и просто не выбрасывать мусор на улицу")
+
+@bot.command()
+async def Help(ctx):
+    await ctx.send("есть только команда !Save для того чтобы помочь миру")
 
 bot.run("Tokin")
