@@ -35,8 +35,5 @@ async def on_message(message):
         await message.channel.send(":sob:")
     else:
         return
-        #await message.channel.send("Я не понимаю такую команду!")
-        #return
-        #await message.channel.send(message.content)
 
-client.run("ТОКЕН")
+client.run("MTExNDIyOTE4NDUyNTUwODY1OQ.GJ6jSB.bM7bJXZuxYUDlKGBVeNCxRW6pR8cySyEjvXMU8")

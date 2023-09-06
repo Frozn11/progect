@@ -1,13 +1,5 @@
-#this .py just an test for me 
+import random
 
-import re
+mylist = ["apple", "banana", "cherry"]
 
-dlina = int(input("чесло дававй "))
-
-try:
-    int(dlina)
-    print(True)
-except:
-    print(False)
-
-
+print(random.choices(mylist, weights = [10, 1, 1], k = 14)) 

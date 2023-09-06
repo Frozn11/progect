@@ -30,10 +30,6 @@ def MultiplyC(Number1, Number2):
 def gen_pass(pass_length):
     elements = "+-/*!&$#?=@<>"
     password = ""
-
-    for i in range(pass_length):
-        password += random.choice(elements)
-
     return password
 
 def flip_coin():
