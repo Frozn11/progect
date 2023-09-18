@@ -1,0 +1,61 @@
+* {
+
+text-align: center;
+}
+
+
+body {
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif; /* Семейство шрифтов */
+    font-size: 28px; /* Размер основного шрифта в <p></p>  */
+    width: 94vw;
+    height: 94vh;
+    margin: auto;
+    background-image: url("mine_2.gif"); /* Цвет фона веб-страницы */
+    background-repeat: no-repeat;
+    background-size: 110vw 100vh;
+    padding: 50px;
+    color: #ffffff; /* Цвет основного текста */ 
+    text-decoration-color: #000000;
+}
+
+@keyframes color-change {
+    0% {
+      color: rgb(255, 255, 255);
+    }
+  
+    50% {
+      color: rgb(187, 187, 187);
+    }
+  
+    100% {
+      color: rgb(255, 255, 255);
+    }
+}
+
+h1 {
+    animation: color-change 3s infinite;
+}
+
+@keyframes color-change {
+    0% {
+      color: rgb(158, 158, 158);
+    }
+  
+    50% {
+      color: rgb(255, 255, 255);
+    }
+  
+    100% {
+      color: rgb(158, 158, 158);
+    }
+}
+
+h2 {
+    animation: color-change 3s infinite;
+}
+
+h1 {
+    color: #00c900; /* Цвет заголовка */
+    font-size: 24px; /* Размер шрифта в пунктах */
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif; /* Семейство шрифтов */
+}
