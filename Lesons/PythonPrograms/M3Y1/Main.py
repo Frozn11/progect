@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 import os
+import requests
 import random
 
 app = Flask(__name__)
@@ -25,7 +26,19 @@ def hello():
 @app.route("/image")
 def image():
     pic1 = os.path.join(app.config["UPLOAD_FOLDER"], "ew.png")
-    return render_template('index.html', user_image = pic1)
+    return render_template('index.html', user_image = pic1 )
+
+@app.route("/ducks")
+def ducks():
+    
+    image_url = get_duck_image_url()
+    return render_template('index.html', user_image = image_url)
+
+def get_duck_image_url():    
+    url = 'https://random-d.uk/api/random'
+    res = requests.get(url)
+    data = res.json()
+    return data['url']
 
 @app.route('/user/frozn121212')
 def show_user_profile():
