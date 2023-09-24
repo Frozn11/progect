@@ -28,9 +28,24 @@ def image():
     pic1 = os.path.join(app.config["UPLOAD_FOLDER"], "ew.png")
     return render_template('index.html', user_image = pic1 )
 
+@app.route("/moneta")
+def moneta():
+        flip = random.randint(0, 2)
+        if flip == 0:
+            return "ОРЕЛ"
+        else:
+            return "РЕШКА"
+        
+@app.route("/NewPassword")
+def gen_pass():
+    elements = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+    password = ""
+    for i in range(20):
+        password += random.choice(elements)
+    return password
+
 @app.route("/ducks")
 def ducks():
-    
     image_url = get_duck_image_url()
     return render_template('index.html', user_image = image_url)
 
